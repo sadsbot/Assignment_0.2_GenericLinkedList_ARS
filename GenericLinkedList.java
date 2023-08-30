@@ -3,14 +3,14 @@
 *
 * @author aross-sermons
 * @version 1.0
-* CS215; Lab #
+* CS215; Lab #0.2
 * Fall 2023
 */
 
 public class GenericLinkedList<T> {
-	GenericNode<T> head;
+	GenericNode<?> head;
 	int length;
-	GenericNode<T> tail;
+	GenericNode<?> tail;
 	public GenericLinkedList()
 	{
 		head=null;
@@ -22,11 +22,11 @@ public class GenericLinkedList<T> {
 		if (head==null) { return true;}
 		else return false;
 	}
-	public GenericNode<T> getList()
+	public GenericNode<?> getList()
 	{
 		return head;
 	}
-	public void addGenericNode(GenericNode<T> aGenericNode)
+	public void addGenericNode(GenericNode<?> aGenericNode)
 	{
 		if (isEmpty() ) {
 			head = aGenericNode;
@@ -34,7 +34,7 @@ public class GenericLinkedList<T> {
 			return;
 		}
 		tail.nextGenericNode=aGenericNode;
-		tail=(GenericNode<T>) tail.nextGenericNode;
+		tail=(GenericNode<?>) tail.nextGenericNode;
 		tail.nextGenericNode=null;
 		length++;
 			
