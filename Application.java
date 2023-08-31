@@ -10,25 +10,6 @@
 
 public class Application {
 	public static void main(String[] args) {
-		System.out.println("Instantiating new LinkedList myList with 2 nodes. \nNode1 = 1, Node2 = 2");
-		
-		LinkedList myList=new LinkedList();
-		
-		Node aNode=new Node();
-		aNode.setData(1);
-		myList.addNode(aNode);
-		aNode = new Node();
-		aNode.setData(2);
-		myList.addNode(aNode);
-		
-		System.out.println("\nPrinting the data of each node in myList...");
-		
-		Node tempnode=myList.getList();
-		do 
-		{
-			System.out.println(tempnode.data);
-			tempnode=tempnode.nextNode;
-		} while (tempnode!=null);
 		
 		System.out.println("\nInstantiating new GenericLinkedList gList with 3 GenericNodes. \nNode1 = \"Andrew\", Node2 = 19, Node3 = true");
 		
