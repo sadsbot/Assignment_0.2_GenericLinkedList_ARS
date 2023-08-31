@@ -1,5 +1,5 @@
 /**
-* Class Description
+* Application Class
 *
 * @author aross-sermons
 * @author njohnson3

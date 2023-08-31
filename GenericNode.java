@@ -1,5 +1,5 @@
 /**
-* Class Description
+* A generic node to hold any object as a data type.
 *
 * @author aross-sermons
 * @author njohnson3
@@ -25,9 +25,15 @@ class GenericNode<T> {
 	public void setData(T data) {
 		this.data=data;
 	}//end
+	/**
+	 * @return the GenericNode
+	 */
 	public GenericNode<T> getGenericNode() {
 		return this;
 	}//end
+	/**
+	 * @param nextGenericNode the nextGenericNode to be set
+	 */
 	public void setNextGenericNode(GenericNode<?> nextGenericNode)
 	{
 		this.nextGenericNode=nextGenericNode;
